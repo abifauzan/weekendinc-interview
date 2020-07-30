@@ -1,1 +1,432 @@
 /* You can add global styles to this file, and also import other style files */
+/* @font-face {
+  font-family: 'Work Sans';
+  src: url('/assets/fonts/WorkSans-Black.ttf') format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src: url('/assets/fonts/WorkSans-BlackItalic.ttf') format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src: url('/assets/fonts/WorkSans-ExtraBold.ttf') format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src: url('/assets/fonts/WorkSans-ExtraBoldItalic.ttf') format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src: url('/assets/fonts/WorkSans-Bold.ttf') format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src: url('/assets/fonts/WorkSans-BoldItalic.ttf') format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src: url('/assets/fonts/WorkSans-Medium.ttf') format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src: url('/assets/fonts/WorkSans-MediumItalic.ttf') format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src: url('/assets/fonts/WorkSans-Regular.ttf') format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src: url('/assets/fonts/WorkSans-Italic.ttf') format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src: url('/assets/fonts/WorkSans-Thin.ttf') format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src: url('/assets/fonts/WorkSans-ThinItalic.ttf') format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src: url('/assets/fonts/WorkSans-Light.ttf') format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Work Sans', sans-serif;
+  src: url('/assets/fonts/WorkSans-LightItalic.ttf') format("truetype");
+  font-weight: 100;
+  font-style: italic;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --faded-pink: #eebece;
+  --blue: #0b24fb;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #f4623a;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #f4623a;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --black: #000000;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Work Sans', 'arial', sans-serif; */
+  /* font-weight: normal; */
+  /* font-weight: 500; */
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+nav {
+  z-index: 1;
+  overflow: hidden;
+}
+
+.Bitmap {
+  width: 33px;
+  height: 33px;
+  object-fit: contain;
+}
+
+.title {
+  margin-left: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* change the brand and text color */
+.good-morning {
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+.Fellas {
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
+}
+
+header {
+  /* background-color: var(--primary); */
+  background: var(--faded-pink);
+  margin-top: 50px;
+}
+.masthead {
+  /* height: 400px; */
+  height: 103vh;
+  padding: 170px;
+  background-image: url('assets/images/bg-1.svg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  transform: translateY(-50px);
+  color: var(--white);
+}
+
+.WEEKEND-FROM-HOME {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: 900 !important;
+  font-stretch: normal;
+  font-style: bold;
+  line-height: 0.82;
+  letter-spacing: 2px;
+  text-align: center;
+  color: var(--white);
+}
+
+.Stay-active-with-a-l {
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: italic;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--white);
+}
+
+.Bitmap-hero {
+  width: 220px;
+  /* height: 305px; */
+  margin-top: 45px;
+  object-fit: contain;
+  position: relative;
+}
+
+.btn-rounded {
+  /* font-family: 'Work Sans'; */
+  font-weight: normal;
+  font-size: large;
+  letter-spacing: 1px;
+  background: var(--white);
+  border-radius: 40px;
+  padding: 20px 100px;
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  bottom: 55px;
+  /* left: 50; */
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.quotes-section {
+  /* border-top: 1px solid #000; */
+  width: 100%;
+  height: 670px;
+  /* display: flex; */
+  background: var(--faded-pink);
+  font-weight: 200;
+}
+
+.img-lego-rotate {
+  width: 180px;
+}
+
+.content-text {
+  transform: translateY(-30px);
+}
+
+.blockquote {
+  color: var(--black);
+  max-width: 660px;
+  font-size: 23px;
+  font-weight: 500;
+  /* letter-spacing: 0.6px; */
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.text-blue {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.title {
+  font-size: 37px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.blockquote-footer  {
+  color: var(--white);
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+
+}
+
+.testimonials {
+  max-width: 1000px !important;
+  /* margin: 0 auto; */
+  margin-top: 10px;
+  /* background: blue; */
+}
+
+.circle {
+  background: var(--blue);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.testimonials .title {
+  transform: translateY(-40px);
+}
+
+.container-slide {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* .owl-carousel {
+  width : 100%;
+} */
+
+/* .owl-item {
+  width: 300px !important;
+} */
+.box-slider {
+  /* width: 300px; */
+  /* height: 300px; */
+  padding: 25px;
+  background: var(--white);
+}
+
+.box-slider .title-slider {
+  font-weight: 900;
+  font-size: 32px;
+  padding-bottom: 20px;
+  color: var(--black);
+}
+
+.box-slider .content-slider {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.owl-carousel .owl-nav{
+  /* height: 47px; */
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+  top: 50px;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.owl-carousel .owl-prev:before {
+  font-family: FontAwesome;
+    content: "\f060";
+    font-size: 16px;
+}
+
+.owl-carousel .owl-next:before {
+  font-family: FontAwesome;
+    content: "\f061";
+    font-size: 16px;
+}
+
+.owl-carousel .owl-prev {
+  /* background: url(nav-icon.png) no-repeat scroll 0 0; */
+  position: absolute;
+  left: -110px;
+}
+.owl-carousel .owl-next {
+  /* background: url(nav-icon.png) no-repeat scroll -24px 0px; */
+  position: absolute;
+  right: -110px;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  /* display: inline-block; */
+  /* border-radius: 60px; */
+  /* box-shadow: 0px 0px 2px #888; */
+  /* padding: 20px 30px; */
+  background: var(--white);
+  color: var(--blue);
+  line-height: 35px;
+  width: 42px;
+	height: 42px;
+	/* border: 1px solid #909090; */
+	border-radius: 100%;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: var(--pink);
+}
+
+.owl-stage { left: -50px; }
+
+.dark-section {
+  background-color: var(--black);
+  padding-top: 230px;
+}
+
+
+.container-box-dark {
+  max-width: 700px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  margin: auto;
+  position: relative;
+}
+
+.content-box-dark {
+  margin: auto;
+  /* max-width: 600px; */
+  /* height: 300px; */
+  /* background-color: gray; */
+
+}
+
+.container-box-dark .text-content-dark {
+  text-align: center;
+  font-size: 19.5px;
+  line-height: 1.7;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+
+@media (min-width: 1200px) {
+  .container{
+      max-width: 1200px;
+  }
+}
