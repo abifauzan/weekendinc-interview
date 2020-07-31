@@ -228,8 +228,11 @@ header {
   letter-spacing: 1px;
   background: var(--white);
   border-radius: 40px;
-  padding: 20px 100px;
   transition: all 0.3s ease 0s;
+}
+
+.btn-hero {
+  padding: 20px 100px;
   position: absolute;
   bottom: 55px;
   /* left: 50; */
@@ -401,19 +404,11 @@ header {
 
 
 .container-box-dark {
-  max-width: 700px;
+  max-width: 720px;
   /* display: flex; */
   /* flex-direction: column; */
   margin: auto;
   position: relative;
-}
-
-.content-box-dark {
-  margin: auto;
-  /* max-width: 600px; */
-  /* height: 300px; */
-  /* background-color: gray; */
-
 }
 
 .container-box-dark .text-content-dark {
@@ -421,9 +416,138 @@ header {
   font-size: 19.5px;
   line-height: 1.7;
   padding-top: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 90px;
 }
 
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.content-box-dark {
+  position: relative;
+}
+
+.path-3 {
+  position: absolute;
+  /* background-color: red; */
+  /* right: -40; */
+  right: -320px;
+  top: -10px;
+}
+
+.path-3 img {
+  width: 200px;
+
+}
+
+.card {
+  border: none;
+}
+
+.container-tips {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px auto 170px;
+  width: 100%;
+}
+
+.container-tips .card-tips {
+  max-width: 380px;
+  max-height: 210px;
+  position: relative;
+  box-sizing: border-box;
+  margin-right: 12px;
+  z-index: 2;
+  /* margin: 10px 10px 0 0; */
+  /* width: calc(1/3*100% - (1 - 1/3)*10px); */
+  /* background: #46B980; */
+  /* padding: 10px; */
+  /* color: #fff; */
+}
+
+.card-tips .card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-tips .card-body {
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 17px 30px;
+  /* flex: 1; */
+  display: flex;
+}
+
+.card-tips .card-body p {
+  padding: 0 30px 0 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.3;
+  /* letter-spacing: 0.6px; */
+}
+
+.btn-circle {
+  /* width: 40px; */
+  /* height: 35px; */
+  padding: 10px 15px;
+  border-radius: 50%;
+  /* font-size: 8px; */
+  /* text-align: center; */
+  background: var(--white);
+}
+
+.btn-tips {
+  /* padding: 0 !important; */
+}
+.btn-tips i {
+  font-size: 14px;
+}
+
+.lego-3 {
+  position: relative;
+  margin-top: -250px;
+}
+
+.lego-3 img {
+  width: 300px;
+}
+
+.footer {
+  /* position: absolute; */
+  /* bottom: 0; */
+  width: 100%;
+  padding: 10px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: var(--blue);
+  color: var(--white);
+
+}
+
+.footer p {
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.footer .version-info {
+  font-weight: 300;
+  font-size: 17px;
+  border: 1px solid var(--white);
+  border-radius: 50px;
+  padding: 0 10px;
+  /* width: 200px; */
+  line-height: 2;
+  height: 35px;
+  vertical-align: middle;
+  margin-top: auto;
+}
 
 @media (min-width: 1200px) {
   .container{
