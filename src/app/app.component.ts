@@ -28,20 +28,20 @@ export class AppComponent {
     // autoWidth: true,
     stagePadding: 50,
     // startPosition: 1,
-    // responsive: {
-    //   0: {
-    //     items: 1
-    //   },
-    //   400: {
-    //     items: 2
-    //   },
-    //   740: {
-    //     items: 3
-    //   },
-    //   940: {
-    //     items: 4
-    //   }
-    // },
+    responsive: {
+      0: {
+        items: 1
+      },
+      575: {
+        items: 2
+      },
+      740: {
+        items: 2
+      },
+      940: {
+        items: 2
+      }
+    },
     nav: true,
     navText: ['<div class="nav-btn prev-slide"></div>', '<div class="nav-btn next-slide"></div>'],
   };
