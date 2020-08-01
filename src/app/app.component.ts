@@ -24,7 +24,7 @@ export class AppComponent {
     // navSpeed: 700,
     // navText: ['left', 'right'],
     loop: true,
-    margin: 10,
+    margin: 12,
     // autoWidth: true,
     stagePadding: 50,
     // startPosition: 1,
