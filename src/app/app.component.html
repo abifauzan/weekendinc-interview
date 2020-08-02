@@ -67,16 +67,15 @@
 
         <div class="container-slide" data-aos="fade-left" data-aos-duration="1500">
           <owl-carousel-o [options]="customOptions">
-            <ng-template carouselSlide>
+            <ng-template carouselSlide *ngFor="let data of dataTestimonials$ | async">
               <div class="box-slider">
-                <h1 class="title-slider m-0">Blu Kicks</h1>
+                <h1 class="title-slider m-0">{{ data.by }}</h1>
                 <p class="content-slider m-0">
-                  Places where you can leverage tools and software to free up time to focus on growing
-                  the business.
+                  {{ data.testimony }}
                 </p>
               </div>
             </ng-template>
-            <ng-template carouselSlide>
+            <!-- <ng-template carouselSlide>
               <div class="box-slider">
                 <h1 class="title-slider m-0">Angelus</h1>
                 <p class="content-slider m-0">
@@ -91,7 +90,7 @@
                   Unless you have a truly unique product, it will be very hard to differentiate and gain brand traction
                 </p>
               </div>
-            </ng-template>
+            </ng-template> -->
           </owl-carousel-o>
         </div>
 
@@ -133,14 +132,15 @@
       <div class="path-3">
         <img src="assets/images/path-3.svg" alt="">
       </div>
-      <div class="card card-tips">
+
+      <div class="card card-tips" *ngFor="let tips of dataHelpTips$ | async">
         <!-- Card image -->
-        <img class="card-img-top" src="assets/images/tips-1.jpg" alt="Card image cap">
+        <img class="card-img-top" [src]="tips.image" alt="{{ tips.title }}">
 
         <!-- Card content -->
         <div class="d-flex text-white">
             <div class="card-body">
-              <p class="flex-grow-1 m-0">Start quickly with simple steps</p>
+              <p class="flex-grow-1 m-0">{{ tips.title }}</p>
               <button class="btn btn-circle btn-tips">
                 <i class="fa fa-arrow-right"></i>
               </button>
@@ -148,35 +148,6 @@
         </div>
       </div>
 
-      <div class="card card-tips">
-        <!-- Card image -->
-        <img class="card-img-top" src="assets/images/tips-2.jpg" alt="Card image cap">
-
-        <!-- Card content -->
-        <div class="d-flex text-white">
-            <div class="card-body">
-              <p class="flex-grow-1 m-0">Run smoothly at vero eos at accusamus</p>
-              <button class="btn btn-circle btn-tips">
-                <i class="fa fa-arrow-right"></i>
-              </button>
-            </div>
-        </div>
-      </div>
-
-      <div class="card card-tips">
-        <!-- Card image -->
-        <img class="card-img-top" src="assets/images/tips-3.jpg" alt="Card image cap">
-
-        <!-- Card content -->
-        <div class="d-flex text-white">
-            <div class="card-body">
-              <p class="flex-grow-1 m-0">Denounce with righteous indignation</p>
-              <button class="btn btn-circle btn-tips">
-                <i class="fa fa-arrow-right"></i>
-              </button>
-            </div>
-        </div>
-      </div>
     </div>
 
     <div class="container container-box">
