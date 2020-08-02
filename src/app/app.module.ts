@@ -16,7 +16,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    CarouselModule
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

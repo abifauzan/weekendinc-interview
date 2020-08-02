@@ -25,7 +25,7 @@
 <header class="masthead-container">
   <div class="masthead">
     <!-- <div class="container"> -->
-      <div class="row">
+      <div class="row" data-aos="fade-down" data-aos-duration="2000">
         <div class="col-12 text-center">
           <h1 class="font-weight-bold WEEKEND-FROM-HOME">Weekend From Home</h1>
           <p class="Stay-active-with-a-l">Stay active with a little workout.</p>
@@ -33,6 +33,7 @@
                 srcset="assets/images/lego-bitmap@2x.png 2x,
                         assets/images/lego-bitmap@3x.png 3x"
                 class="Bitmap-hero">
+
           <button class="btn-rounded btn-hero btn-hero-effect">Let's Go </button>
         </div>
       </div>
@@ -43,11 +44,12 @@
 <!-- Page Quotes -->
 <section class="quotes-section">
   <div class="d-flex align-items-end flex-column bd-highlight" style="height: 200px;">
-    <img src="assets/images/lego-rotate.png" class="img-lego-rotate">
+    <img src="assets/images/lego-rotate.png" class="img-lego-rotate" data-aos="fade-left"
+    data-aos-anchor="#triggerLegoOnRight">
   </div>
   <div class="d-flex flex-column">
     <div class="d-flex justify-content-center content-text">
-      <blockquote class="blockquote text-right">
+      <blockquote id="triggerLegoOnRight" class="blockquote text-right" data-aos="zoom-in">
         <p class="mb-4">
           <span class="text-blue">Deffinition;</span>
           a practice or exercise to test or improve one's
@@ -61,10 +63,10 @@
     </div>
 
     <div class="container testimonials">
-      <div class="circle"></div>
+      <div class="circle" [@bounceDiv]="currentState" (click)="changeState()"></div>
       <h2 class="text-white text-center title m-0">Testimonial</h2>
 
-        <div class="container-slide">
+        <div class="container-slide" data-aos="fade-left" data-aos-duration="1500">
           <owl-carousel-o [options]="customOptions">
             <ng-template carouselSlide>
               <div class="box-slider">
@@ -106,7 +108,7 @@
 <section class="dark-section text-white">
   <!-- <div class="d-flex flex-column"> -->
     <div class="container container-box">
-      <div class="box-body">
+      <div class="box-body" data-aos="fade-right" data-aos-duration="1500">
         <h2 class="title">POV</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -115,7 +117,7 @@
           in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </p>
       </div>
-      <div class="box-body">
+      <div class="box-body" data-aos="fade-left" data-aos-duration="1500">
         <h2 class="title">Resource</h2>
         <p>
           These cases are perfectly simple and easy to distinguish. In a free hour, when our power
@@ -123,12 +125,12 @@
           best
         </p>
       </div>
-      <div class="box-body mt-5">
+      <div class="box-body mt-5" data-aos="fade-right" data-aos-duration="1500">
         <h2 class="title">Help & Tips</h2>
       </div>
     </div>
 
-    <div class="container-tips">
+    <div class="container-tips" data-aos="fade-right" data-aos-duration="1500">
       <div class="path-3">
         <img src="assets/images/path-3.svg" alt="">
       </div>
@@ -179,7 +181,7 @@
     </div>
 
     <div class="container container-box">
-      <div class="box-body last-dark-box">
+      <div id="triggerLegoOnLeft" class="box-body last-dark-box" data-aos="fade-up" data-aos-duration="1500">
         <h2 class="title">You're all set.</h2>
         <p>
           The wise man therefore always holds in these matters to this principle of selection.
@@ -188,7 +190,8 @@
     </div>
 
 
-    <div class="lego-3">
+    <div class="lego-3" class="img-lego-rotate" data-aos="fade-up-right"
+    data-aos-anchor="#triggerLegoOnLeft">
       <img src="assets/images/lego-3.png"
             srcset="assets/images/lego-3@2x.png 2x,
                     assets/images/lego-3@3x.png 3x">
